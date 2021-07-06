@@ -1,0 +1,11 @@
+provider "aws" {
+access_key = "AKIAXUVE25SIC3QSMDP6"
+secret_key = "g2R4+bGcNCQHyZd59gEzHND1wxi4ollLDokTyVU5"
+region = "ap-southeast-1"
+}
+
+resource "aws_instance" "example" {
+ami = "ami-018c1c51c7a13e363"
+instance_type = "t2.micro"
+
+}
